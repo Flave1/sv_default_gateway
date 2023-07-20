@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAw3BXM+/Ic0uBNtFy28dIbgAAAAACAAAAAAAQZgAAAAEAACAAAAAJVMoQr00CH/C0FYLujzNXA+RWSZSl6cGAx68cH3F28gAAAAAOgAAAAAIAACAAAADNI2J5XMmQTxchQmRwpetQ0692jbVPfojlGCdrc+F2FSAAAADf5JcPONxU2ptrbEgfeBE6YuF+yB1mok3I9RXn0RHzxkAAAAAA07rZCXg1cpbHQjurnL+aiR07d6fyWC1R0FbxiIPj+6xwyYGqamn3fKWXLgcvrjYJGWFuFdNDSCPwzE4+xLsL</EncryptedPassword>
+    <_PublishTargetUrl>ftp://162.144.13.173/home1/flavecon/apigateway.flaveconsole.com/flaveconsole</_PublishTargetUrl>
+    <History>False|2023-06-22T10:18:43.6756398Z;False|2023-06-22T11:15:15.9932210+01:00;False|2023-06-22T11:13:59.8023224+01:00;False|2023-06-22T11:11:58.2476518+01:00;False|2023-06-22T11:05:13.2613783+01:00;False|2023-06-22T10:08:50.6396471+01:00;False|2023-06-22T10:07:41.5391807+01:00;False|2023-06-22T10:03:44.5258785+01:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

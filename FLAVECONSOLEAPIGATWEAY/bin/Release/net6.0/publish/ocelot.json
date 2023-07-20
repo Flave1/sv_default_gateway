@@ -1,0 +1,87 @@
+{
+  "GlobalConfiguration": [
+    //{
+    //  "BaseUrl": "https://localhost:44349/"
+    //}
+    {
+      "BaseUrl": "www.flavetechs.com"
+    }
+  ],
+  "Routes": [
+    ///////...............IN HOUSE SERVICES....................///////
+    {
+      "UpstreamPathTemplate": "/fws/client/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "flavetech-001-site6.etempurl.com/",
+          "Port": "80"
+        }
+      ],
+      "DownstreamPathTemplate": "/{url}",
+      "DownstreamScheme": "HTTP"
+    },
+    //{
+    //  "UpstreamPathTemplate": "/fws/client/{url}",
+    //  "UpstreamHttpMethod": [ "GET", "POST" ],
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost/",
+    //      "Port": "44357"
+    //    }
+    //  ],
+    //  "DownstreamPathTemplate": "/{url}",
+    //  "DownstreamScheme": "HTTPS"
+    //},
+    {
+      "UpstreamPathTemplate": "/cbt/client/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "flavetech-001-site5.etempurl.com/",
+          "Port": "80"
+        }
+      ],
+      "DownstreamPathTemplate": "/{url}",
+      "DownstreamScheme": "HTTP"
+    },
+    //{
+    //  "UpstreamPathTemplate": "/cbt/client/{url}",
+    //  "UpstreamHttpMethod": [ "GET", "POST" ],
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost/",
+    //      "Port": "6377"
+    //    }
+    //  ],
+    //  "DownstreamPathTemplate": "/{url}",
+    //  "DownstreamScheme": "HTTP"
+    //},
+
+    /////////..................SCHOOLS................///////////
+    {
+      "UpstreamPathTemplate": "/smp/development/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "flavetech-001-site1.etempurl.com",
+          "Port": "80"
+        }
+      ],
+      "DownstreamPathTemplate": "/{url}",
+      "DownstreamScheme": "http"
+    },
+    {
+      "UpstreamPathTemplate": "/smp/staging/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "flavetech-001-site3.etempurl.com/",
+          "Port": "80"
+        }
+      ],
+      "DownstreamPathTemplate": "/{url}",
+      "DownstreamScheme": "http"
+    }
+  ]
+}

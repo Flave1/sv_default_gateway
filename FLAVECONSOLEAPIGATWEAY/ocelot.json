@@ -1,0 +1,97 @@
+{
+  "GlobalConfiguration": [ { "BaseUrl": "https://localhost:44349/" } ], //[
+  //{
+  //"BaseUrl": "https://localhost:44349/"
+  //},
+  //{
+  //  "BaseUrl": "gateway.flaveconsole.com"
+  //}
+  //],
+  "Routes": [
+    ///////...............IN HOUSE SERVICES....................///////
+    {
+      "UpstreamPathTemplate": "/fws/client/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "fwsapi.flaveconsole.com/",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/{url}",
+      "DownstreamScheme": "HTTP"
+    },
+    //{
+    //  "UpstreamPathTemplate": "/fws/client/{url}",
+    //  "UpstreamHttpMethod": [ "GET", "POST" ],
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost/",
+    //      "Port": 44357
+    //    }
+    //  ],
+    //  "DownstreamPathTemplate": "/{url}",
+    //  "DownstreamScheme": "HTTPS"
+    //},
+    //{
+    //  "UpstreamPathTemplate": "/smp/server/{url}",
+    //  "UpstreamHttpMethod": [ "GET", "POST" ],
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "smpapi.flaveconsole.com/",
+    //      "Port": 80
+    //    }
+    //  ],
+    //  "DownstreamPathTemplate": "/{url}",
+    //  "DownstreamScheme": "HTTP"
+    //},
+    {
+      "UpstreamPathTemplate": "/smp/server/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost/",
+          "Port": 44373
+        }
+      ],
+      "DownstreamPathTemplate": "/{url}",
+      "DownstreamScheme": "HTTPS"
+    },
+    //{
+    //  "UpstreamPathTemplate": "/cbt/server/{url}",
+    //  "UpstreamHttpMethod": [ "GET", "POST" ],
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost/",
+    //      "Port": 6377
+    //    }
+    //  ],
+    //  "DownstreamPathTemplate": "/{url}",
+    //  "DownstreamScheme": "HTTP"
+    //}
+    {
+      "UpstreamPathTemplate": "/cbt/server/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "cbtapi.flaveconsole.com/",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/{url}",
+      "DownstreamScheme": "HTTP"
+    },
+    {
+      "UpstreamPathTemplate": "/job/server/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost/",
+          "Port": 3100
+        }
+      ],
+      "DownstreamPathTemplate": "/{url}",
+      "DownstreamScheme": "HTTP"
+    }
+  ]
+}
