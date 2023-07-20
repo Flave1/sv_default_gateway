@@ -10,6 +10,18 @@
   "Routes": [
     ///////...............IN HOUSE SERVICES....................///////
     {
+      "UpstreamPathTemplate": "/job/server/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost/",
+          "Port": 3200
+        }
+      ],
+      "DownstreamPathTemplate": "/{url}",
+      "DownstreamScheme": "HTTP"
+    },
+    {
       "UpstreamPathTemplate": "/fws/client/{url}",
       "UpstreamHttpMethod": [ "GET", "POST" ],
       "DownstreamHostAndPorts": [
@@ -76,18 +88,6 @@
         {
           "Host": "cbtapi.flaveconsole.com/",
           "Port": 80
-        }
-      ],
-      "DownstreamPathTemplate": "/{url}",
-      "DownstreamScheme": "HTTP"
-    },
-    {
-      "UpstreamPathTemplate": "/job/server/{url}",
-      "UpstreamHttpMethod": [ "GET", "POST" ],
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost/",
-          "Port": 3100
         }
       ],
       "DownstreamPathTemplate": "/{url}",
